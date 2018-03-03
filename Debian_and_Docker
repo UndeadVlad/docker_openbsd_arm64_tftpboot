@@ -53,6 +53,8 @@
 7)Получение Serial Raspberry Pi 3
     В консоли набрать cat /proc/cpuinfo
     Строчка "Serial" нули в начале не писать 
+    (или просто использовать последние 8 цифр MAC Raspberry Pi 3)
+    P.s. логин от Raspberrian: pi пароль: raspberry
 
 8)Сборка и настройка Docker
 	  Cкачиваем https://github.com/kswt/docker-openbsd_arm64-tftpboot
