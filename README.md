@@ -22,7 +22,7 @@
 	Для установки рекомендуется стабильная версия. Для того, чтобы установить ее выполните:
 	sudo apt-get install google-chrome-stable	
 
-4)Настройка Gnome (по желанию
+4)Настройка Gnome (по желанию)
 
 	Ставим Gnome Tweak Tool
 	sudo apt-get install gnome-tweak-tool
