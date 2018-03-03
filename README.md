@@ -61,6 +61,7 @@
 
 8)Установка Putty
 	sudo apt-get install putty
+	
 9)Работа с Raspberry Pi 3 через com порт
 	Подключить uart
 	Ввести в консоль sudo dmesg | grep ttyUSB
@@ -71,7 +72,7 @@
 		Speed 115200
 	Нажать кнопку "Open"
 
-9)Сборка и настройка Docker
+10)Сборка и настройка Docker
 	Cкачиваем https://github.com/kswt/docker-openbsd_arm64-tftpboot
 	
 	Меняем имя у папки srv/tftp/a7c3571d на свой Serial Raspberry Pi 3
@@ -86,4 +87,12 @@
 	Вводим в Docker service tftpd-hpa start && service isc-dhcp-server start; tail -f /var/log/daemon.log 
 	P.s. Команды есть в истории, до них можно добраться клавишами вверх и вниз.
 	Подаем питание на Raspberry Pi 3
-
+11)Установка и настройка Wireshark
+	Установка sudo apt-get install wireshark-gtk
+	
+	Настройка:
+	sudo dpkg-reconfigure wireshark-common
+	Там согласиться с тем, что не только root должен иметь возможность снифить пакеты.
+	
+	Потом добавить себя к группе wireshark
+	sudo adduser $USER wireshark
