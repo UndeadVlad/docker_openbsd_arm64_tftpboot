@@ -56,7 +56,19 @@
     (или просто использовать последние 8 цифр MAC Raspberry Pi 3)
     P.s. логин от Raspberrian: pi пароль: raspberry
 
-8)Сборка и настройка Docker
+8)Установка Putty
+	sudo apt-get install putty
+9)Работа с Raspberry Pi 3 через com порт
+	Подключить uart
+	Ввести в консоль sudo dmesg | grep ttyUSB
+	Запустить Putty с правами 
+	Потавить следущие настройки в putty:
+		Connection type: Serial
+		Serial line /dev/ttyUSB0
+		Speed 115200
+	Нажать кнопку "Open"
+
+9)Сборка и настройка Docker
 	  Cкачиваем https://github.com/kswt/docker-openbsd_arm64-tftpboot
 	
 	  Меняем имя у папки srv/tftp/a7c3571d на свой Serial Raspberry Pi 3
