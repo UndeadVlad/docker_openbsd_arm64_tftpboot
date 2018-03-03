@@ -69,17 +69,18 @@
 	Нажать кнопку "Open"
 
 9)Сборка и настройка Docker
-	  Cкачиваем https://github.com/kswt/docker-openbsd_arm64-tftpboot
+	Cкачиваем https://github.com/kswt/docker-openbsd_arm64-tftpboot
 	
-	  Меняем имя у папки srv/tftp/a7c3571d на свой Serial Raspberry Pi 3
-	  Поменять mac на свой в файле etc/dhcp/dhcpd.conf и в файле etc/dnsmasq.conf на свой
+	Меняем имя у папки srv/tftp/a7c3571d на свой Serial Raspberry Pi 3
+	Поменять mac на свой в файле etc/dhcp/dhcpd.conf и в файле etc/dnsmasq.conf на свой
 	
-	  Сборка Docker
-	  открываем папку в консоли и вводим sudo docker build --network=host .
+	Сборка Docker
+	Открываем папку в консоли и вводим sudo docker build --network=host .
 	
-	  Для запуска вводим sudo docker run -it --net=host $( sudo docker images| awk 'NR==2 {print $(3)}')
+	Для запуска вводим sudo docker run -it --net=host $( sudo docker images| awk 'NR==2 {print $(3)}')
 	
-	  Подключаем Raspberry Pi 3 к той же сети 
-	  Вводим в Docker service tftpd-hpa start && service isc-dhcp-server start; tail -f /var/log/daemon.log
-	  Подаем питание на Raspberry Pi 3
+	Подключаем Raspberry Pi 3 к той же сети 
+	Вводим в Docker service tftpd-hpa start && service isc-dhcp-server start; tail -f /var/log/daemon.log 
+	P.s. Команды есть в истории, до них можно добраться клавишами вверх и вниз.
+	Подаем питание на Raspberry Pi 3
 
