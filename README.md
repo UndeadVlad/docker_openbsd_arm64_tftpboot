@@ -5,7 +5,7 @@
 	nano /etc/sudoers
 	добавить строчку имя_пользователя ALL=(ALL) ALL
 	
-3)Установка Google Chrome
+3)Установка Google Chrome (по желанию)
 	Для установки Google Chrome вам нужно будет загрузить ключ репозитория, добавить сам репозиторий и обновить список пакетов:
 	
 	wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -22,7 +22,7 @@
 	Для установки рекомендуется стабильная версия. Для того, чтобы установить ее выполните:
 	sudo apt-get install google-chrome-stable	
 
-4)Настройка Gnome
+4)Настройка Gnome (по желанию)
 	Ставим Gnome Tweak Tool
 	sudo apt-get install gnome-tweak-tool
 	
@@ -59,7 +59,7 @@
     (или просто использовать последние 8 цифр MAC Raspberry Pi 3)
     P.s. логин от Raspberrian: pi пароль: raspberry
 
-8)Установка Putty
+8)Установка Putty 
 	sudo apt-get install putty
 	
 9)Работа с Raspberry Pi 3 через com порт
