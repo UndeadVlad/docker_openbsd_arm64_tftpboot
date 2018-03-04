@@ -52,9 +52,10 @@
   * Подаем питание на Raspberry Pi 3
 	
 ## 9. Установка и настройка Wireshark
-  Установка `sudo apt-get install wireshark-gtk`
-	
-  Настройка:
+  * **Установка:** 
+    `sudo apt-get install wireshark-gtk`
+
+  * **Настройка:**
     * `sudo dpkg-reconfigure wireshark-common`
     * Согласиться с тем, что не только root должен иметь возможность снифить пакеты.
     * Добавить себя к группе wireshark: `sudo adduser $USER wireshark`
