@@ -32,15 +32,15 @@
   * Потавить следущие настройки в putty:
       ```
       Connection type: Serial
-		  Serial line /dev/ttyUSB0
-		  Speed 115200
+      Serial line /dev/ttyUSB0
+      Speed 115200
       ```
   * Нажать кнопку "Open"
 
 ## 7. Сборка и настройка Docker
   * Cкачиваем https://github.com/kswt/docker-openbsd_arm64-tftpboot
   * Меняем имя у папки `srv/tftp/a7c3571d` на свой Serial Raspberry Pi 3
-	* Поменять mac на свой в файле `etc/dhcp/dhcpd.conf` и в файле `etc/dnsmasq.conf` на свой
+  * Поменять mac на свой в файле `etc/dhcp/dhcpd.conf` и в файле `etc/dnsmasq.conf` на свой
 	
   **Для Сборки Docker открываем папку в консоли и вводим `sudo docker build --network=host .`**
 	**Для запуска вводим `sudo docker run -it --net=host $( sudo docker images| awk 'NR==2 {print $(3)}')`**
