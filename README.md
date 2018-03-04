@@ -45,19 +45,16 @@
   **Для Сборки Docker открываем папку в консоли и вводим `sudo docker build --network=host .`**
 	**Для запуска вводим `sudo docker run -it --net=host $( sudo docker images| awk 'NR==2 {print $(3)}')`**
 	
-  ### Запуск Raspberry Pi 3 через сеть
-	* Подключаем Raspberry Pi 3 к той же сети 
-	* Вводим в Docker `service tftpd-hpa start && service isc-dhcp-server start; tail -f /var/log/daemon.log`
-	  P.s. Команды есть в истории, до них можно добраться клавишами вверх и вниз.
-	* Подаем питание на Raspberry Pi 3
+## 8. Запуск Raspberry Pi 3 через сеть
+  * Подключаем Raspberry Pi 3 к той же сети 
+  * Вводим в Docker `service tftpd-hpa start && service isc-dhcp-server start; tail -f /var/log/daemon.log`
+    P.s. Команды есть в истории, до них можно добраться клавишами вверх и вниз.
+  * Подаем питание на Raspberry Pi 3
 	
-## 8. Установка и настройка Wireshark
-
-	Установка sudo apt-get install wireshark-gtk
+## 9. Установка и настройка Wireshark
+  Установка `sudo apt-get install wireshark-gtk`
 	
-	Настройка:
-	sudo dpkg-reconfigure wireshark-common
-	Там согласиться с тем, что не только root должен иметь возможность снифить пакеты.
-	
-	Потом добавить себя к группе wireshark
-	sudo adduser $USER wireshark
+  Настройка:
+    * `sudo dpkg-reconfigure wireshark-common`
+    * Согласиться с тем, что не только root должен иметь возможность снифить пакеты.
+    * Добавить себя к группе wireshark: `sudo adduser $USER wireshark`
