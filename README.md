@@ -38,7 +38,7 @@
   * Нажать кнопку "Open"
 
 ## 7. Сборка и настройка Docker
-  * Cкачиваем https://github.com/kswt/docker-openbsd_arm64-tftpboot
+  * Cкачиваем https://github.com/UndeadVlad/docker_openbsd_arm64_tftpboot
   * Меняем имя у папки `srv/tftp/a7c3571d` на свой Serial Raspberry Pi 3
   * Поменять mac на свой в файле `etc/dhcp/dhcpd.conf` и в файле `etc/dnsmasq.conf` на свой
   
