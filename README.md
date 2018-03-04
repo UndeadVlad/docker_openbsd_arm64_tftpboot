@@ -18,8 +18,8 @@
 	
 ## 4. Получение Serial Raspberry Pi 3
   * В консоли набрать `cat /proc/cpuinfo`
-  * Строчка "Serial" нули в начале не писать 
-    (или просто использовать последние 8 цифр MAC Raspberry Pi 3)
+  * Строчка "Serial" нули в начале не писать (или просто использовать последние 8 цифр MAC Raspberry Pi 3)
+    
   P.s. логин от Raspberrian: pi пароль: raspberry
 
 ## 5. Установка Putty 
@@ -41,9 +41,9 @@
   * Cкачиваем https://github.com/kswt/docker-openbsd_arm64-tftpboot
   * Меняем имя у папки `srv/tftp/a7c3571d` на свой Serial Raspberry Pi 3
   * Поменять mac на свой в файле `etc/dhcp/dhcpd.conf` и в файле `etc/dnsmasq.conf` на свой
-	
-  **Для Сборки Docker открываем папку в консоли и вводим `sudo docker build --network=host .`**
-	**Для запуска вводим `sudo docker run -it --net=host $( sudo docker images| awk 'NR==2 {print $(3)}')`**
+  
+  * Для Сборки Docker открываем папку в консоли и вводим `sudo docker build --network=host .`
+  * Для запуска вводим `sudo docker run -it --net=host $( sudo docker images| awk 'NR==2 {print $(3)}')`
 	
 ## 8. Запуск Raspberry Pi 3 через сеть
   * Подключаем Raspberry Pi 3 к той же сети 
