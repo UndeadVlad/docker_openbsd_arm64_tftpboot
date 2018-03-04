@@ -23,7 +23,7 @@
   P.s. логин от Raspberrian: pi пароль: raspberry
 
 ## 5. Установка Putty 
-	`sudo apt-get install putty`
+  `sudo apt-get install putty`
 	
 ## 6. Работа с Raspberry Pi 3 через com порт
   * Подключить uart
