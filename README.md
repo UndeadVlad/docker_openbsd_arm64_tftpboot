@@ -1,10 +1,11 @@
-1)Заменить /etc/apt/sources.list
+## 1)Заменить /etc/apt/sources.list
 
-2)Установить и настроить sudo
-
-	apt-get install sudo
-	nano /etc/sudoers
-	добавить строчку имя_пользователя ALL=(ALL) ALL
+## 2)Установить и настроить sudo
+```
+apt-get install sudo
+nano /etc/sudoers
+добавить строчку имя_пользователя ALL=(ALL) ALL
+```
 	
 3)Установка Google Chrome (по желанию)
 
