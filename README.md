@@ -25,7 +25,7 @@
 ## 5. Установка Putty 
   `sudo apt-get install putty`
 	
-## 6. Работа с Raspberry Pi 3 через com порт
+## 6. Работа с Raspberry Pi 3 через com порт с помощью putty
   * Подключить uart
   * Ввести в консоль `sudo dmesg | grep ttyUSB`
   * Запустить putty с правами 
@@ -47,6 +47,7 @@
 	
 ## 8. Запуск Raspberry Pi 3 через сеть
   * Подключаем Raspberry Pi 3 к той же сети 
+  * Назначаем статичный ip 192.168.1.110 для Raspberry Pi 3 (если малина привязанна к другому адресу - надо поменять настройки в файлах: `etc/dhcp/dhcpd.conf` и `etc/dnsmasq.conf` на свой
   * Вводим в Docker `service tftpd-hpa start && service isc-dhcp-server start; tail -f /var/log/daemon.log`
     P.s. Команды есть в истории, до них можно добраться клавишами вверх и вниз.
   * Подаем питание на Raspberry Pi 3
